@@ -23,4 +23,4 @@ This is a simple quiz application that collects user information, asks questions
 Feel free to customize and extend this quiz application according to your needs. If you have any questions or suggestions, please reach out.
 
 Happy quizzing!
-
+IMPORTANT NOTE--in the java script file make the background image name jpeg, i have written jpg change it. Please
