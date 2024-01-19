@@ -1,0 +1,128 @@
+/* --------------------------------------------------------------
+   Author: Ananta Narayan Sethy
+   Date: 19/01/2004
+   Description: Styles for the quiz application.
+   -------------------------------------------------------------- */
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url('background_default.jpeg'); /* Default background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+  height: 100vh; /* Make the background image full screen */
+}
+
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure the container takes the full height of the screen */
+  transition: transform 0.5s ease; /* Add transition for the container */
+}
+
+#user-info {
+  transition: transform 0.5s ease; /* Add transition for the user info window */
+  text-align: center; /* Center text in the user info window */
+}
+
+#quiz-questions {
+  display: none;
+  text-align: center; /* Center text in the quiz questions container */
+}
+
+h3 {
+  color: #fff; /* Change text color for questions to white */
+  margin-bottom: 15px; /* Add some space between questions and options */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000; /* Change text color for options to black */
+}
+
+input[type="radio"] {
+  margin-right: 5px; /* Add some space between radio buttons and options */
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px; /* Adjust button padding */
+  margin-top: 10px; /* Add some space between buttons */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.score-circle {
+  display: inline-block;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.message-container {
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-message {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ... (rest of your existing CSS) */
+
+/* ... (rest of your existing CSS) */
+
+  
+  /* ... (rest of your existing CSS) */
+  
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+  margin-bottom: 30px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#quiz-questions h2,
+#result-container h2 {
+  text-align: center;
+}
+
+#question-container {
+  margin-bottom: 50px;
+}
+
+#result-container p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4caf50;
+}

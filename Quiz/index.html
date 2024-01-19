@@ -1,0 +1,48 @@
+<!-- --------------------------------------------------------------
+   Author: Ananta Narayan Sethy
+   Date: 19/01/2004
+   Description: HTML structure for the quiz application.
+   -------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz Application</title>
+</head>
+<body>
+  <div id="quiz-container">
+    <div id="user-info">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="registration">Registration Number:</label>
+      <input type="text" id="registration" placeholder="Enter your registration number">
+
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-questions" style="display: none;">
+      <h2>Quiz Questions</h2>
+      <div id="question-container"></div>
+     
+    </div>
+
+    <div id="result-container" style="display: none;">
+      <h2>Your Score</h2>
+      <p id="user-score"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
